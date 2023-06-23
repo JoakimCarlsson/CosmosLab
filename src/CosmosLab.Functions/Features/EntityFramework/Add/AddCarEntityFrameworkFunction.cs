@@ -1,12 +1,12 @@
 ﻿namespace CosmosLab.Functions.Features.EntityFramework.Add;
 
-public class AddCarFunction
+public class AddCarEntityFrameworkFunction
 {
-    private readonly ILogger<AddCarFunction> _logger;
+    private readonly ILogger<AddCarEntityFrameworkFunction> _logger;
     private readonly CosmosLabDbContext _dbContext;
 
-    public AddCarFunction(
-        ILogger<AddCarFunction> logger,
+    public AddCarEntityFrameworkFunction(
+        ILogger<AddCarEntityFrameworkFunction> logger,
         CosmosLabDbContext dbContext
         )
     {
@@ -14,7 +14,7 @@ public class AddCarFunction
         _dbContext = dbContext;
     }
     
-    [Function("AddCarFunction")]
+    [Function("AddCarEntityFrameworkFunction")]
     public async Task<HttpResponseData> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "entityframework/car")] HttpRequestData req,
         FunctionContext executionContext,

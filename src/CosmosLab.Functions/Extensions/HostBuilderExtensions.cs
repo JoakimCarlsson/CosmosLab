@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace CosmosLab.Functions.Extensions;
+﻿namespace CosmosLab.Functions.Extensions;
 
 internal static class HostBuilderExtensions
 {
@@ -8,8 +6,8 @@ internal static class HostBuilderExtensions
     {
         hostBuilder.ConfigureServices(services =>
         {
-            services.AddCosmosLabEntityFrameWork();
-            services.AddHostedService<DatabaseInitializationService>();
+            services.AddCosmosEntityFrameWorkDb();
+            services.AddCosmosDb();
         });
 
         return hostBuilder; 

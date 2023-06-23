@@ -25,9 +25,6 @@
         <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Features\CosmosSDK\" />
-    </ItemGroup>
-    <ItemGroup>
       <ProjectReference Include="..\CosmosLab.EntityFramework\CosmosLab.EntityFramework.csproj" />
     </ItemGroup>
 </Project>

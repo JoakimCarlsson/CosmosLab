@@ -2,7 +2,7 @@
 
 public static class DependencyInjectionExtensions
 {
-    public static IServiceCollection AddCosmosLabEntityFrameWork(this IServiceCollection serviceCollection)
+    private static IServiceCollection CosmosEntityFrameworkInitialization(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddDbContext<CosmosLabDbContext>(options =>
         {
@@ -12,6 +12,15 @@ public static class DependencyInjectionExtensions
                 );
             options.EnableSensitiveDataLogging();
         });
+        return serviceCollection;
+    }
+
+    public static IServiceCollection AddCosmosEntityFrameWorkDb(this IServiceCollection serviceCollection)
+    {
+        serviceCollection
+            .CosmosEntityFrameworkInitialization()
+            .AddHostedService<DatabaseInitializationService>();
+        
         return serviceCollection;
     }
 }
