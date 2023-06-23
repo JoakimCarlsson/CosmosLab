@@ -1,6 +1,4 @@
-﻿using CosmosLab.EntityFramework.Persistance;
-
-namespace CosmosLab.EntityFramework.Extensions;
+﻿namespace CosmosLab.EntityFramework.Extensions;
 
 public static class DependencyInjectionExtensions
 {

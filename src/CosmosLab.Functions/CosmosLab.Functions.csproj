@@ -7,7 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="Bogus" Version="34.0.2" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.14.1" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
         <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.10.0" />
     </ItemGroup>
     <ItemGroup>
@@ -23,7 +25,9 @@
         <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Extensions\" />
-      <Folder Include="Features\" />
+      <Folder Include="Features\CosmosSDK\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CosmosLab.EntityFramework\CosmosLab.EntityFramework.csproj" />
     </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿global using System.Reflection;
 
 global using CosmosLab.EntityFramework.Persistance;
+global using CosmosLab.EntityFramework.Models;
 
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.DependencyInjection;

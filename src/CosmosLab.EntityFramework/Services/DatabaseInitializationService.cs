@@ -1,6 +1,6 @@
 ﻿namespace CosmosLab.EntityFramework.Services;
 
-internal sealed class DatabaseInitializationService : IHostedService
+public sealed class DatabaseInitializationService : IHostedService
 {
     private readonly IServiceProvider _serviceProvider;
 
