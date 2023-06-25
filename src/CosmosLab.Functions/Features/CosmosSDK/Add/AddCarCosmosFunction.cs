@@ -1,5 +1,8 @@
 ﻿namespace CosmosLab.Functions.Features.CosmosSDK.Add;
 
+using Car = CosmosLab.Functions.Features.CosmosSDK.Models.Car;
+
+
 public class AddCarCosmosFunction
 {
     private readonly ILogger<AddCarCosmosFunction> _logger;
@@ -11,7 +14,7 @@ public class AddCarCosmosFunction
         )
     {
         _logger = logger;
-        _container = cosmosClient.GetContainer("CosmosLab", "Cars");
+        _container = cosmosClient.GetContainer("CosmosLabTest", "Carss");
     }
     
     [Function("AddCarCosmosFunction")]

@@ -11,8 +11,8 @@ internal sealed class DatabaseInitializationService : IHostedService
     
     public async Task StartAsync(CancellationToken cancellationToken)
     {
-        var databaseName = "CosmosLab";
-        var containerName = "Cars";
+        var databaseName = "CosmosLabTest";
+        var containerName = "Carss";
         
         var database = await _cosmosClient.CreateDatabaseIfNotExistsAsync(
             databaseName,

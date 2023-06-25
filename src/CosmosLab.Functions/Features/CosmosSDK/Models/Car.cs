@@ -1,4 +1,4 @@
-﻿namespace CosmosLab.Functions.Features.CosmosSDK.Add;
+﻿namespace CosmosLab.Functions.Features.CosmosSDK.Models;
 
 internal sealed record Car(
     Guid Id,
