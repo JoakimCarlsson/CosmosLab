@@ -29,7 +29,7 @@ public class AddCarCosmosFunction
                 new PartitionKey(testCar.Make),
                 cancellationToken: cancellationToken);
 
-            _logger.LogInformation("Took {RequestCharge}RU/s to add car", response.RequestCharge);
+            _logger.LogInformation("Cost {RequestCharge}RU/s to add car", response.RequestCharge);
             return req.CreateResponse(response.StatusCode == HttpStatusCode.Created ? HttpStatusCode.Created : HttpStatusCode.BadRequest);
         }
         catch (Exception e)
