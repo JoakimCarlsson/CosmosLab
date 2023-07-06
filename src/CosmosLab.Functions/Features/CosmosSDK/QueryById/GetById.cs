@@ -25,17 +25,14 @@ public class GetById
         
         var resultSetIterator = _container.GetItemQueryIterator<Car>(queryDefinition);
 
-        var cars = new List<Car>();
         while (resultSetIterator.HasMoreResults)
         {
             var response = await resultSetIterator.ReadNextAsync();
             _logger.LogInformation("Cost {RequestCharge}RU/s to read car", response.RequestCharge);
             
-            cars.AddRange(response);
+            if (response.Count > 0)
+                return req.CreateJsonResponse(response.First());
         }
-        
-        if (cars.Count > 0)
-            return req.CreateJsonResponse(cars[0]);
 
         return req.CreateResponse(HttpStatusCode.NotFound);
     }
