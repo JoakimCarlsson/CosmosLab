@@ -1,4 +1,6 @@
 ﻿global using System.Net;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
 
 global using Bogus;
 
@@ -9,6 +11,9 @@ global using CosmosLab.EntityFramework.Persistance;
 global using CosmosLab.CosmosSDK.Extensions;
 global using CosmosLab.Shared.Models;
 
+global using Azure.Core.Serialization;
+
+global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Azure.Cosmos;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Azure.Functions.Worker;
