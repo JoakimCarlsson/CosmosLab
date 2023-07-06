@@ -1,6 +1,4 @@
-﻿using CosmosLab.Shared.Models;
-
-namespace CosmosLab.EntityFramework.Persistance.Entities;
+﻿namespace CosmosLab.EntityFramework.Persistance.Entities;
 
 public sealed record DbCar(
     Guid Id,
