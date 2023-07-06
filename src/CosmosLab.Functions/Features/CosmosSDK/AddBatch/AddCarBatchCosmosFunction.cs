@@ -1,7 +1,5 @@
 ﻿namespace CosmosLab.Functions.Features.CosmosSDK.AddBatch;
 
-using Car = CosmosLab.Functions.Features.CosmosSDK.Models.Car;
-
 public class AddCarBatchCosmosFunction
 {
     private readonly ILogger<AddCarBatchCosmosFunction> _logger;

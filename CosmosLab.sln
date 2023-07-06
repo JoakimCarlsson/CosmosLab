@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosLab.CosmosSDK", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosLab.Console.StressTest", "src\CosmosLab.Console.StressTest\CosmosLab.Console.StressTest.csproj", "{40716056-4E27-4AAA-88A2-18CCEA41ED64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosLab.Shared", "src\CosmosLab.Shared\CosmosLab.Shared.csproj", "{A1258AB9-564A-46CD-BB4C-DA2C58B825FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,7 @@ Global
 		{54735C98-2545-4CD6-A7D7-0EC24BE45E0F} = {DA802A4A-543D-4493-9C87-2D586AC16D59}
 		{B0699470-797C-4546-9E47-BCA0D69B8AA7} = {DA802A4A-543D-4493-9C87-2D586AC16D59}
 		{40716056-4E27-4AAA-88A2-18CCEA41ED64} = {DA802A4A-543D-4493-9C87-2D586AC16D59}
+		{A1258AB9-564A-46CD-BB4C-DA2C58B825FA} = {DA802A4A-543D-4493-9C87-2D586AC16D59}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{96B11659-A31A-4F97-A6F9-BE6C8E7E4F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +41,9 @@ Global
 		{40716056-4E27-4AAA-88A2-18CCEA41ED64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40716056-4E27-4AAA-88A2-18CCEA41ED64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40716056-4E27-4AAA-88A2-18CCEA41ED64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1258AB9-564A-46CD-BB4C-DA2C58B825FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1258AB9-564A-46CD-BB4C-DA2C58B825FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1258AB9-564A-46CD-BB4C-DA2C58B825FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1258AB9-564A-46CD-BB4C-DA2C58B825FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

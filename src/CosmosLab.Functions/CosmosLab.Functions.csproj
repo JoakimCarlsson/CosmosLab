@@ -26,5 +26,6 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\CosmosLab.EntityFramework\CosmosLab.EntityFramework.csproj" />
+      <ProjectReference Include="..\CosmosLab.Shared\CosmosLab.Shared.csproj" />
     </ItemGroup>
 </Project>

@@ -6,8 +6,8 @@ global using CosmosLab.Functions.Extensions;
 global using CosmosLab.EntityFramework.Extensions;
 global using CosmosLab.EntityFramework.Services;
 global using CosmosLab.EntityFramework.Persistance;
-global using CosmosLab.EntityFramework.Models;
 global using CosmosLab.CosmosSDK.Extensions;
+global using CosmosLab.Shared.Models;
 
 global using Microsoft.Azure.Cosmos;
 global using Microsoft.Extensions.DependencyInjection;
