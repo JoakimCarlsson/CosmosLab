@@ -25,27 +25,27 @@ public class AddCarBatchCosmosFunction
     {
         try
         {
-            var testCarList = new Faker<Car>()
-                .CustomInstantiator(f =>
-                    new Car(
-                        Guid.NewGuid(),
-                        "Tesla",
-                        f.Vehicle.Model(),
-                        f.Random.Number(1900, 2021),
-                        f.Commerce.Color(),
-                        f.Random.Number(2, 4)
-                    )
-                ).Generate(5);
-
-            var partitionKey  = new PartitionKey(testCarList.First().Make);
-            var transactionalBatch = _container.CreateTransactionalBatch(partitionKey);
-
-            foreach (var car in testCarList)
-                transactionalBatch.CreateItem(car);
-
-            var response = await transactionalBatch.ExecuteAsync(cancellationToken);
-            _logger.LogInformation("Took {RequestCharge}RU/s to add car", response.RequestCharge);
-            
+            // var testCarList = new Faker<Car>()
+            //     .CustomInstantiator(f =>
+            //         new Car(
+            //             Guid.NewGuid(),
+            //             "Tesla",
+            //             f.Vehicle.Model(),
+            //             f.Random.Number(1900, 2021),
+            //             f.Commerce.Color(),
+            //             f.Random.Number(2, 4)
+            //         )
+            //     ).Generate(5);
+            //
+            // var partitionKey  = new PartitionKey(testCarList.First().Make);
+            // var transactionalBatch = _container.CreateTransactionalBatch(partitionKey);
+            //
+            // foreach (var car in testCarList)
+            //     transactionalBatch.CreateItem(car);
+            //
+            // var response = await transactionalBatch.ExecuteAsync(cancellationToken);
+            // _logger.LogInformation("Took {RequestCharge}RU/s to add car", response.RequestCharge);
+            //
             return req.CreateResponse(HttpStatusCode.OK);
         }
         catch (Exception e)

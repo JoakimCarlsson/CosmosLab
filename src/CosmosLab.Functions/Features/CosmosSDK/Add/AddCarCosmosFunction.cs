@@ -34,7 +34,23 @@ public class AddCarCosmosFunction
                         f.Vehicle.Model(),
                         f.Random.Number(1900, 2021),
                         f.Commerce.Color(),
-                        f.Random.Number(2, 4)
+                        f.Random.Number(2, 4),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 10),
+                        f.Random.Number(1, 100000),
+                        f.Random.Number(1, 100000),
+                        f.Random.Number(1, 1000000)
                     )
                 ).Generate();
 
